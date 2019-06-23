@@ -18,6 +18,7 @@ use craft\events\RegisterElementActionsEvent;
 use craft\events\RegisterUserPermissionsEvent;
 use craft\records\UserGroup;
 use craft\services\UserPermissions;
+use devkokov\impersonate\elements\actions\Impersonate as ActionImpersonate;
 
 use yii\base\Event;
 
@@ -59,7 +60,7 @@ class Impersonate extends Plugin
         self::$plugin = $this;
 
         Event::on(User::class, Element::EVENT_REGISTER_ACTIONS, function (RegisterElementActionsEvent $event) {
-            $event->actions[] = Impersonate::class;
+            $event->actions[] = ActionImpersonate::class;
         });
 
         Event::on(
