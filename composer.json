@@ -1,6 +1,6 @@
 {
     "name": "devkokov/impersonate",
-    "description": "Allows non-admin users to log in as other users.",
+    "description": "A Craft 3 plugin that allows non-admin users to log in as other non-admin users, on a per user group basis.",
     "type": "craft-plugin",
     "version": "1.0.0",
     "keywords": [
