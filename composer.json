@@ -1,0 +1,41 @@
+{
+    "name": "devkokov/impersonate",
+    "description": "Allows non-admin users to log in as other users.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "impersonate"
+    ],
+    "support": {
+        "docs": "https://github.com/devkokov/impersonate/blob/master/README.md",
+        "issues": "https://github.com/devkokov/impersonate/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dimitar Kokov",
+            "homepage": "https://github.com/devkokov"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "devkokov\\impersonate\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Impersonate",
+        "handle": "impersonate",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/devkokov/impersonate/master/CHANGELOG.md",
+        "class": "devkokov\\impersonate\\Impersonate"
+    }
+}
